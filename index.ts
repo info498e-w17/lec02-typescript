@@ -1,5 +1,13 @@
-function sayHello(name) {
-  console.log("Hello, "+name);
-}
+import readline = require('readline'); 
 
-sayHello("y'all");
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Where do you want to go?', function(answer) {
+  console.log('You said "'+answer.toUpperCase()+'"!');
+
+  rl.close(); //close the whole interface once 
+              //completely done asking questions
+});

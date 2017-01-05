@@ -9,6 +9,7 @@
   "author": "Info 498e W17",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^6.0.57",
     "dog-names": "^1.0.2",
     "lodash": "^4.17.4"
   }
